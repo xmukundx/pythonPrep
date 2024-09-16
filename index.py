@@ -40,10 +40,17 @@ for i in range(li[i]):
 
     
     
-li = [1, 2, 6, 88, 4545, 12]
+list = [1,2,6,88,4545,12]
 
-for i in range(len(li)):
-    print(li[i])
+
+def printli(para, indx = 0):
+    if indx == len(para):
+        return
+    print(list[indx])
+    printli(para, indx +1)
+        
+        
+printli(list)
     
     
     
